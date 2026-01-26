@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Random; 
 
-public class AttendanceTracker {
+public class PrelimLabWork1 {
 
     public static void main(String[] args) {
         // Use System Look and Feel for clean window borders
