@@ -1,6 +1,7 @@
+package PrelimLabWork3.Java;
 import javax.swing.JOptionPane;
 
-public class PrelimCalculator {
+public class PrelimLabWork3 {
     public static void main(String[] args) {
         // 1. Accept and validate numeric user inputs via UI dialogs
         String attendanceInput = JOptionPane.showInputDialog("Enter Attendance Score (0-100):");
