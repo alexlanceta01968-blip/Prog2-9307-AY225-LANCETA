@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prelim Lab Work 2 - Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-container">
+        <h2>System Login</h2>
+        <div class="input-group">
+            <label>Username:</label>
+            <input type="text" id="username" placeholder="Enter username">
+        </div>
+
+        <div class="input-group">
+            <label>Password:</label>
+            <input type="password" id="password" placeholder="Enter password">
+            
+            <div class="show-pass-container">
+                <input type="checkbox" id="togglePass" onclick="togglePassword()"> 
+                <label for="togglePass">Show Password</label>
+            </div>
+        </div>
+
+        <button id="loginBtn" onclick="handleLogin()">Log In</button>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+        <h2 id="welcome-msg"></h2>
+        <div class="status-box">
+            <p><strong>Login Timestamp:</strong></p>
+            <p id="timestamp-display"></p>
+        </div>
+        <button class="download-btn" onclick="generateReport()">Generate Attendance Summary</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
